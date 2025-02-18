@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Staff Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Medical Staff Login</h2>
+        <form action="medical.html" method="get">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    /* General body styling for the login page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, rgba(18, 172, 142, .9), rgba(18, 172, 142, .7)), url('Background.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styles */
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2d5b85; /* Matches your themed color */
+}
+
+/* Form element styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input fields */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #12ac8e;
+    outline: none;
+}
+
+/* Submit button styles */
+button[type="submit"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #12ac8e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+    background-color: #0d846c;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+</style>
